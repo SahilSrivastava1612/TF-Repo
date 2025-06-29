@@ -8,6 +8,7 @@ module "resource_group" {
 # This ia 2nd test
 # This is a 3rd Test
 
+
 module "virtual_network" {
   depends_on    = [module.resource_group]
   source        = "../modules_without_for_each/azurerm_virtual_network"
