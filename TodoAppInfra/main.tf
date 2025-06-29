@@ -4,6 +4,8 @@ module "resource_group" {
   rg_location = "Southeast Asia"
 }
 
+# This is a test
+
 module "virtual_network" {
   depends_on    = [module.resource_group]
   source        = "../modules_without_for_each/azurerm_virtual_network"
