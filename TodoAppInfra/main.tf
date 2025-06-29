@@ -5,6 +5,7 @@ module "resource_group" {
 }
 
 # This is a test
+# This ia 2nd test
 
 module "virtual_network" {
   depends_on    = [module.resource_group]
